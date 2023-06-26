@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Belajar HTML bersama RevoU</title>
+    <style>
+    #getNama {
+      color: #000000; /* Warna hitam */
+    }
+
+    .warnaNama {
+      color: #00CA92; /* Warna Nama */
+    }
+  </style>
   </head>
   <body>
 <h1 id="getNama"></h1>
@@ -17,7 +26,7 @@
       }
 
       var greetingElement = document.getElementById('getNama');
-      greetingElement.textContent = 'Halo ' + nama;
+      greetingElement.innerHTML = 'Halo <span class="warnaNama">' + nama + '</span>';
     }
   </script>
   </body>
