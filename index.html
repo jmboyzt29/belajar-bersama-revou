@@ -6,6 +6,19 @@
     <title>Belajar HTML bersama RevoU</title>
   </head>
   <body>
-Halo kamu
+<h1 id="getNama"></h1>
+<script>
+    window.onload = function() {
+      var urlParams = new URLSearchParams(window.location.search);
+      var nama = urlParams.get('nama');
+
+      if (nama === null || nama === '') {
+        nama = 'kamu';
+      }
+
+      var greetingElement = document.getElementById('getNama');
+      greetingElement.textContent = 'Halo ' + nama;
+    }
+  </script>
   </body>
 </html>
