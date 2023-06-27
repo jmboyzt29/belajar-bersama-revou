@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Data Pribadi</title>
+</head>
+<body>
+    <h2>Form Data Pribadi</h2>
+
+    <form action="" method="POST">
+        <div>
+            <label for="namaDepan">Nama Depan:</label>
+            <input  type="text" id="namaDepan" name="namaDepan" required pattern="[A-Za-z]+" title="Hanya huruf diperbolehkan" />
+        </div>
+        <div>
+            <label for="namaBelakang">Nama Belakang:</label>
+            <input  type="text" id="namaBelakang" name="namaBelakang" pattern="[A-Za-z]+" title="Hanya huruf diperbolehkan" />
+        </div>
+        <div>
+            <label for="tanggalLahir">Tanggal Lahir:</label>
+            <input  type="date" id="tanggalLahir" name="tanggalLahir" required />
+        </div>
+        <div>
+            <label for="alamat">Alamat:</label>
+            <textarea  id="alamat" name="alamat" required></textarea>
+        </div>
+        <div mt-3">
+            <label>Jenis Kelamin:</label>
+            <input type="radio" id="Pria" name="gender" value="Pria" required />
+            <label for="Pria">Laki-laki</label>
+            <input type="radio" id="Wanita" name="gender" value="Wanita" required />
+            <label for="Wanita">Perempuan</label>
+        </div>
+        <div>
+            <label for="hobby">Hobi:</label>
+            <select  id="hobby" name="hobby">
+                <option value="">Pilih Hobi</option>
+                <option value="Membaca">Membaca</option>
+                <option value="Olahraga">Olahraga</option>
+                <option value="Memasak">Memasak</option>
+            </select>
+        </div>
+        <div>
+            <button type="submit">Simpan</button>
+        </div>
+    </form>
+
+</body>
+</html>
